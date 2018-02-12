@@ -1,0 +1,12 @@
+# Docker Nginx Django MySQL APP Skeleton
+Use for creating a Skeleton of Django in Docker
+## How to use
+First steps
+- git clone https://github.com/felipebastosweb/docker-nginx-django-mysql.git yourapp
+- cd yourapp
+- Edit this files writing your data: docker-compose.yml, web/web/settings.py
+- docker-compose up
+- docker-compose exec web bash
+Working in dev container (https://docs.djangoproject.com/en/2.0/intro/overview/)
+- # python manage.py migrate
+- # python manage.py startapp yourapp

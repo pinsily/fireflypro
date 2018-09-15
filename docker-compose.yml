@@ -25,7 +25,7 @@ services:
       - web
   web:
     build: .
-    command: uwsgi --ini uwsgi.ini
+    command: uwsgi --ini firefly_uwsgi.ini
     working_dir: /code/Firefly
     volumes:
       - .:/code

@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
   db:
@@ -26,7 +26,7 @@ services:
   web:
     build: .
     command: uwsgi --ini uwsgi.ini
-    working_dir: /code/web
+    working_dir: /code/Firefly
     volumes:
       - .:/code
       - django_admin_static:/usr/local/lib/python3.6/site-packages/django/contrib/admin/static
